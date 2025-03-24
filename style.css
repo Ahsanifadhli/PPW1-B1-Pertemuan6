@@ -1,0 +1,100 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header Styling */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 10px;
+    margin: 10px;
+  }
+
+  header h1 {
+    padding: 20px 10px;
+  }
+  
+  /* Navbar Styling */
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Hero Section Styling */
+  .hero {
+    text-align: center;
+    padding: 5px;
+    color: black;
+  }
+  
+  .hero img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  /* Grid Styling */
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .card {
+    background-color: #ff6b6b;
+    color: black;
+    width: calc(33.33% - 20px); /* Lebar kartu untuk desktop */
+  }
+  
+/* Media Query untuk Tablet */
+@media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .grid {
+      gap: 10px; /* Jarak antar kartu */
+    }
+  
+    .card {
+        width: calc(33.33% - 20px); /* Lebar kartu untuk desktop */
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .hero img {
+      max-width: 100%;
+    }
+  
+    .card {
+      width: 100%; /* Kartu tetap memenuhi lebar layar */
+      padding: 10px; /* Padding yang lebih kecil */
+    }
+  }
